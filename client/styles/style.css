@@ -1,0 +1,120 @@
+body {
+    background: #f6cafa;
+    font-family: Verdana, sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family:'Segoe UI', sans-serif;
+}
+
+header,main,footer {
+    min-width: 855px;
+}
+
+header .container, main .container, footer .container {
+    min-width: 855px;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header {
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.header_text {
+    margin-left: 100px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 3em;
+}
+
+.header_nav_links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 150px;
+}
+
+.header_nav_item{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 125%;
+    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    transition: .2s ease-in;
+}
+
+.header_nav_item:hover{
+    background-color: rgb(193, 63, 226);
+    border-radius: 6px;
+    color: white;
+    transform: scale(1.1);
+}
+
+
+main {
+    background-color: white;
+    overflow: auto;
+    padding: 40px;
+}
+
+footer {
+    background-color: whitesmoke;
+    overflow: auto;
+}
+
+.footer_contact {
+    float: left;
+    width: 570px;
+    margin-left: 50px;
+}
+
+.footer_contact_title{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100%;
+}
+
+.footer_contact_name {
+    font-family: 'Dancing Script', cursive;
+    font-size: 2em;
+}
+
+.footer_sitemap {
+    float: right;
+    width: 285px;
+    margin-right: 100px;
+    text-align: center;
+}
+
+.footer_sitemap_title{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 100%;
+    text-align: center;
+}
+
+.footer_sitemap_mapleft {
+    float: left;
+}
+
+.footer_sitemap_list{
+    list-style-type: none;
+    margin: 0;
+}
+
+.footer_sitemap_mapright {
+    float: right;
+}
+
+.footer_sitemap_list_item {
+    font-family: 'Exo 2', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.footer_sitemap_list_item:hover{
+    text-decoration: underline;
+}
