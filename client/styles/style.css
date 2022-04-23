@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    font-family:'Segoe UI', sans-serif;
+    font-family: 'Exo 2', sans-serif;
 }
 
 header,main,footer {
@@ -33,7 +33,7 @@ header {
 }
 
 .header_nav_links {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     align-items: center;
     margin-right: 150px;
@@ -42,9 +42,9 @@ header {
 .header_nav_item{
     font-family: 'Exo 2', sans-serif;
     font-size: 125%;
-    margin-top: 5px;
     text-decoration: none;
-    padding: 2px;
+    margin-top: 5px;
+    padding: 5px;
     color: black;
     transition: .2s ease-in;
 }
@@ -83,6 +83,19 @@ main {
 .main_tabs_item span.active{
     background: #eee;
 }
+
+/* =======for faq.html======== */
+.main_faqs {
+    min-width: 855px;
+    font-family: 'Exo 2', sans-serif;
+    list-style-type: none;
+}
+
+.QA {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+/* =======for faq.html======== */
 
 footer {
     background-color: whitesmoke;
