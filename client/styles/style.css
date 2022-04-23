@@ -44,6 +44,7 @@ header {
     font-size: 125%;
     margin-top: 5px;
     text-decoration: none;
+    padding: 2px;
     color: black;
     transition: .2s ease-in;
 }
@@ -59,7 +60,28 @@ header {
 main {
     background-color: white;
     overflow: auto;
-    padding: 40px;
+    padding: 3% 10%;
+}
+
+.main_tabs{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main_tabs_item span{
+    display: inline-block;
+    border-radius: 5px 20px 0 0;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 110%;
+    width: 150px;
+    margin-right: 10px;
+    text-align: center;
+    background: #ddd;
+    padding: 5px;
+}
+
+.main_tabs_item span.active{
+    background: #eee;
 }
 
 footer {
