@@ -97,6 +97,35 @@ main {
 }
 /* =======for faq.html======== */
 
+/* =======for about.html======== */
+.container_about{
+    display: flex;
+    flex-direction: column;
+}
+
+.container_about_elem{
+    margin-top: 3%;
+}
+
+.container_about_elem_left{
+    float: left;
+    width: 50%;
+}
+
+.container_about_elem_right{
+    float: right;
+    width: 50%;
+}
+
+.container_about_elem_left img{
+    margin-left: 5%;
+}
+
+.container_about_elem_right img{
+    margin-left: 10%;
+}
+/* =======for about.html======== */
+
 footer {
     background-color: whitesmoke;
     overflow: auto;
