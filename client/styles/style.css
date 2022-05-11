@@ -74,7 +74,6 @@ main {
     font-family: 'Exo 2', sans-serif;
     font-size: 110%;
     width: 150px;
-    margin-right: 10px;
     text-align: center;
     background: #ddd;
     padding: 5px;
@@ -82,6 +81,44 @@ main {
 
 .main_tabs_item span.active{
     background: #eee;
+}
+
+.content {
+    padding: 0 20px 20px 20px;
+    overflow: auto;
+    background: #ddd;
+}
+
+.content_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.content_items_item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.content_items_item_name{
+    text-align: center;
+}
+
+/* .content_items_item_price{
+
+}*/
+
+.content_items_item_button{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    background-color: rgb(193, 172, 228);
+    border-radius: 10px;
 }
 
 /* =======for faq.html======== */
@@ -95,7 +132,8 @@ main {
     font-weight: bold;
     font-size: 1.4em;
 }
-/* =======for faq.html======== */
+/* =======/for faq.html======== */
+
 
 /* =======for about.html======== */
 .container_about{
@@ -124,7 +162,8 @@ main {
 .container_about_elem_right img{
     margin-left: 10%;
 }
-/* =======for about.html======== */
+/* =======/for about.html======== */
+
 
 footer {
     background-color: whitesmoke;
@@ -181,4 +220,40 @@ footer {
 
 .footer_sitemap_list_item:hover{
     text-decoration: underline;
+}
+
+.content_container_popup {
+    display: flex;
+    font-family: 'Exo 2', sans-serif;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    overflow: hidden;
+    position: fixed;
+    top: 0px;
+    left: 0;
+}
+.content_popup {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 40px;
+    background-color: #c5c5c5;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.content_popup_button{
+    font-size: 1em;
+    margin-top: 10px;
+    background-color: rgb(193, 172, 228);
+    border-radius: 10px;
+    grid-column: 1 / 3;
+}
+
+.sucscess{
+    font-size: 1.2em;
+    grid-column: 1 / 3;
 }
