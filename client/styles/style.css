@@ -34,14 +34,16 @@ header {
 
 .header_nav_links {
     display: inline-flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 150px;
+    margin-right: 100px;
+    width: auto;
 }
 
 .header_nav_item{
     font-family: 'Exo 2', sans-serif;
-    font-size: 125%;
+    font-size: 120%;
     text-decoration: none;
     margin-top: 5px;
     padding: 5px;
@@ -84,7 +86,13 @@ main {
 }
 
 .content {
-    padding: 0 20px 20px 20px;
+    padding: 20px;
+    overflow: auto;
+    background: #ddd;
+}
+
+.content_reg{
+    padding: 20px;
     overflow: auto;
     background: #ddd;
 }
@@ -110,9 +118,6 @@ main {
     text-align: center;
 }
 
-/* .content_items_item_price{
-
-}*/
 
 .content_items_item_button{
     font-family: 'Exo 2', sans-serif;
@@ -120,6 +125,66 @@ main {
     background-color: rgb(193, 172, 228);
     border-radius: 10px;
 }
+
+/* =======for orderlist.html======== */
+.content_order_items{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.content_order_items_item{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    padding: 10px;
+    background: white;
+}
+
+.content_myorder_items_item{
+    display: grid;
+    grid-template-columns: 2.9fr .9fr 0.3fr 0.3fr 0.3fr .2fr 1fr .5fr .5fr .5fr;
+    grid-gap: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    background: white;
+}
+
+.content_order_items_item_name{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: center;
+}
+
+.content_order_items_item_client{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+}
+
+.content_order_items_item_manager{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.content_order_items_item_manager_myorders{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    text-align: center;
+}
+
+.content_order_items_item_button{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    background-color: rgb(193, 172, 228);
+    border-radius: 10px;
+}
+/* =======for orderlist.html======== */
+
 
 /* =======for faq.html======== */
 .main_faqs {
@@ -164,6 +229,19 @@ main {
 }
 /* =======/for about.html======== */
 
+main .container_admin{
+    text-align: center;
+}
+
+.content_admin_button{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1em;
+    background-color: rgb(193, 172, 228);
+    border-radius: 10px;
+    margin-top: 25px;
+    height: 50px;
+    width: 200px;
+}
 
 footer {
     background-color: whitesmoke;
